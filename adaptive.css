@@ -1,0 +1,33 @@
+@media (max-width: 1441px) {
+    .auctions_categories ul{
+        margin-left: 15%;
+    }
+    .auctions_categories{
+        display: flex;
+    }
+    .container{
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1024px) {
+    .auctions_categories{
+        display: block;
+    }
+    .auctions_categories ul{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .auctions_categories ul{
+        margin-left: 0%;
+    }
+    .auctions_categories select{
+        
+    }
+}
+
+@media (min-width: 1400px){
+    .container{
+        max-width: 1141px;
+    }
+    
+}

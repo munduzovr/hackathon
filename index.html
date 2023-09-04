@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Аукцион</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="adaptive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="header">
+      <img src="./img/logo.png" alt="" />
+      <ul class="navigator_menu">
+        <li>Auctions</li>
+        <button type="button" class="btn btn-primary sellBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+          Sell
+        </button>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title sellBtn" id="staticBackdropLabel">Create Post</h5>
+                <button type="button" class="btn-close sellBtn" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <input type="text" placeholder="ссылку на картинку" id="addImg">
+                <input type="text" placeholder="Введите название" id="addText">
+                <input type="text" placeholder="Введите описание" id="addDescr">
+                <select name="Тип трансмисии" id="transmission">
+                  <option value="Manual">Manual</option>
+                  <option value="Automatic">Automatic</option>
+                </select>
+                <select name="привод" id="wd">
+                  <option value="FWD">FWD</option>
+                  <option value="RWD">RWD</option>
+                  <option value="4WD">4WD</option>
+                </select>
+                <select name="Кузов" id="Carbody">
+                  <option value="Coupe">Coupe</option>
+                  <option value="Hatchback">Hatchback</option>
+                  <option value="SUV">SUV</option>
+                  <option value="Sedan">Sedan</option>
+                  <option value="Truck">Truck</option>
+                  <option value="Van/Minivan">Van/Minivan</option>
+                  <option value="Wagon">Wagon</option>
+                  <option value="Crossover">Crossover</option>
+                </select>
+                <input type="text" name="" id="price" placeholder="Цена">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="sellCar">Create post</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+      <div class="header_search">
+        <img src="./img/search.svg" alt="" /><input
+          type="text"
+          placeholder="Search for cars"
+          id="searchInp"
+        />
+      </div>
+      <button id="createUserBtn">register</button>
+      <button id="openLoginModalBtn">Log In</button>
+    </header>
+    <div class="line"></div>
+    <section class="container auctions_categories">
+      <h2>Auctions</h2>
+      <select name="gearbox" id="gearBox">
+        <option value="All">Все</option>
+        <option value="Automatic">Automatic</option>
+        <option value="Manual">Manual</option>
+      </select>
+      <select name="" id="CarType" class="select_last">
+        <option value="All">Все</option>
+        <option value="Coupe">Coupe</option>
+        <option value="Crossover">Crossover</option>
+        <option value="Hatchback">Hatchback</option>
+        <option value="Sedan">Sedan</option>
+        <option value="SUV">SUV</option>
+        <option value="Truck">Truck</option>
+        <option value="Van/Minivan">Van/Minivan</option>
+        <option value="Wagon">Wagon</option>
+      </select>
+      <ul>
+        <li>Ending soon</li>
+        <li>Newly listed</li>
+        <li>No reserve</li>
+        <li>Lowest mileage</li>
+        <li>Closest to me</li>
+      </ul>
+    </section>
+    <section class="container section_cards">
+      <ul>
+      <li class="cards"> 
+        <div class="img"> 
+          <img 
+            src="" 
+            alt="car" 
+          /> 
+          <h3 class="cards-name"></h3> 
+          <p></p> 
+          <p>San Diego, CA 92113</p>
+          <button id="editBtn" class="btn btn-success" >Edit</button> 
+          <div class="card-button"> 
+           
+            <button class="card card-delete" id="delBtn">Delete</button> 
+          </div> 
+        </div> 
+      </li>
+    </ul>
+    </section>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a href="#" id="prevBtn">
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-warning">Previous</button>
+            </div>
+          </a>
+        </li>
+        <li class="page-item">
+          <a href="#" id="nextBtn"><button type="button" class="btn btn-success">Next</button></a>
+        </li>
+      </ul>
+    </nav>
+    <footer class="footer">
+      <div>
+        <img src="./img/logo.png" alt="" />
+      </div>
+      <div>
+        <h3>HOW IT WORKS</h3>
+        <ul>
+          <li>Buying a Car</li>
+          <li>Selling a Car</li>
+          <li>Finalizing the Sale</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+      <div>
+        <h3>SELLERS</h3>
+        <ul>
+          <li>Submit Your Car</li>
+          <li>Photography Guide</li>
+        </ul>
+      </div>
+      <div>
+        <h3>HELPFUL LINKS</h3>
+        <ul>
+          <li>Support</li>
+          <li>Shipping</li>
+          <li>Inspections</li>
+          <li>Shop C&B Merch</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div class="footer_social">
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/@carsandbids"
+              ><img src="./img/youtube_logo.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/carsandbids/"
+              ><img src="./img/inst_logo.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/CarsAndBids"
+              ><img src="./img/fc_logo.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@cars_and_bids"
+              ><img src="./img/tik_logo.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/carsandbids"
+              ><img src="./img/tw_logo.png" alt=""
+            /></a>
+          </li>
+        </ul>
+        <p>© Copyright 2023 Cars and Bids LLC</p>
+        <p>Terms of Use Privacy Policy</p>
+      </div>
+    </footer>
+    
+    <div class="modalRus editModal">
+      <input type="text" id="editInpImage"placeholder='Ссылка на картинку'>
+      <input type="text" id="editCarBody"placeholder='Тип кузова'>
+      <input type="text" id="editInpName" placeholder="название">
+      <input type="text"id="editInpTransmission" placeholder="Тип коробки">
+      <input type="text" id="editInpDescription" placeholder="описание">
+      <input type="text" id="editInpPrice" placeholder="Цена">
+      <button id="editBtnSave">Save</button>
+      <button id="closeBtn">Close</button>
+    </div>
+
+    <div id="regModal" class="modalRus">
+      <input type="text" placeholder="Имя пользователя" id="userName" minlength="5">
+      <input type="password" name="Пароль" id="userPassword" pattern="[0-9a-fA-F]{4,8}" title="Enter an ID consisting of 4-8 hexadecimal digits">
+      <button id="regSaveBtn">Save</button>
+      <button id="regCloseBtn">Close</button>
+    </div>
+
+    <div id="logInModal" class="modalRus">
+      <input type="text" placeholder="Имя пользователя" id="userNameLogIn" minlength="5">
+      <input type="password" name="Пароль" id="userPasswordLogIn" pattern="[0-9a-fA-F]{4,8}" title="Enter an ID consisting of 4-8 hexadecimal digits">
+      <button id="LoginBtn">LogIn</button>
+      <button id="LoginCloseBtn">Close</button>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+  </body>
+</html>

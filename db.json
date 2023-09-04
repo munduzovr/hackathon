@@ -1,0 +1,116 @@
+{
+  "cars": [
+    {
+      "cardImage": "https://kostroma.explorer-russia.ru/gallery/auto/modification/3867.jpg",
+      "name": "Acura",
+      "description": "RSX",
+      "transmission": "Manual",
+      "Carbody": "Coupe",
+      "price": "8000$",
+      "id": "8VAEgci"
+    },
+    {
+      "cardImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/2005%E2%80%932007_Hyundai_Tiburon_%28GK%29_V6_coupe.jpg/1200px-2005%E2%80%932007_Hyundai_Tiburon_%28GK%29_V6_coupe.jpg",
+      "name": "Hyundai ",
+      "description": "Tiburon",
+      "transmission": "Manual",
+      "Carbody": "Coupe",
+      "price": "12000$",
+      "id": "vTAg0Re"
+    },
+    {
+      "cardImage": "https://www.kbb.com/wp-content/uploads/2019/12/02-2019-Toyota-Corolla-Hatchback-Exterior-KBB-e1664837712936.jpg",
+      "name": "toyota",
+      "description": "Corolla",
+      "transmission": "Automatic",
+      "Carbody": "Hatchback",
+      "price": "16000$",
+      "id": "OcPc872"
+    },
+    {
+      "cardImage": "https://www.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/vw-golf-top-10.jpg",
+      "name": "Volkswagen",
+      "description": "Polo",
+      "transmission": "Automatic",
+      "Carbody": "Hatchback",
+      "price": "22000$",
+      "id": "ySXVgrz"
+    },
+    {
+      "cardImage": "https://m.atcdn.co.uk/ect/media/%7Bresize%7D/1f7b79c7f1c54528a05e2fe338b76ae5.jpg",
+      "name": "kia",
+      "description": "Optima",
+      "transmission": "Automatic",
+      "Carbody": "Hatchback",
+      "price": "32000$",
+      "id": "9m5KB2G"
+    },
+    {
+      "cardImage": "https://hips.hearstapps.com/hmg-prod/images/2022-toyota-tundra-capstone-001-1-2-1641849879.jpg",
+      "name": "Toyota",
+      "description": "Tundra",
+      "transmission": "Manual",
+      "Carbody": "Truck",
+      "price": "50000$",
+      "id": "_Wx_8YX"
+    },
+    {
+      "cardImage": "https://sputnik.kg/img/07e6/01/17/1061452644_0:221:751:784_1920x0_80_0_0_64081ca1d99f8438ea33278e4724d8b1.jpg",
+      "name": "Mercedes-benz Sprinter",
+      "description": "не бита не крашена 1 владелец",
+      "transmission": "Manual",
+      "Carbody": "Wagon",
+      "price": "55000$",
+      "id": "KOkE2qt"
+    },
+    {
+      "cardImage": "https://media.ed.edmunds-media.com/honda/odyssey/2023/oem/2023_honda_odyssey_passenger-minivan_elite_fq_oem_1_1600.jpg",
+      "name": "Honda",
+      "description": "Odyssey",
+      "transmission": "Manual",
+      "Carbody": "Coupe",
+      "price": "16000$",
+      "id": "xXqpvuq"
+    },
+    {
+      "cardImage": "https://www.kbb.com/wp-content/uploads/2022/06/2022-chevrolet-suburban-front-right.jpg",
+      "name": "Lincoln",
+      "description": "Navigator",
+      "transmission": "Automatic",
+      "Carbody": "SUV",
+      "price": "100000$",
+      "id": "U-53WVx"
+    },
+    {
+      "cardImage": "https://cars.usnews.com/static/images/Auto/izmo/i159615441/2023_hyundai_tucson_angularfront.jpg",
+      "name": "adasd",
+      "description": "1dasd",
+      "transmission": "Manual",
+      "Carbody": "SUV",
+      "price": "100000$",
+      "id": "0fzqkJA"
+    }
+  ],
+  "users": [
+    {
+      "name": "rustam",
+      "pass": "123",
+      "id": 1
+    },
+    {
+      "name": "admin",
+      "pass": "admin",
+      "id": 2
+    },
+    {
+      "name": "rustam",
+      "pass": "rustam",
+      "id": 3
+    },
+    {
+      "name": "222",
+      "pass": "222",
+      "id": 4
+    }
+  ]
+}
